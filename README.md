@@ -1,6 +1,6 @@
 # android-template
 
-[![Build Status](https://travis-ci.org/mvdan/android-template.svg?branch=master)](https://travis-ci.org/mvdan/android-template)
+[![Build Status](https://jenkins.sliideapp.net/buildStatus/icon?job=hub-mvp%2Fdevelop)](https://jenkins.sliideapp.net/me/my-views/view/Android/job/hub-mvp/job/develop/)
 
 Minimalist Android app template using Gradle.
 
@@ -10,13 +10,17 @@ You can use this as a starting point to create new apps from scratch.
 
 * `build.gradle` - root gradle config file
 * `settings.gradle` - root gradle settings file
-* `app` - our only project in this repo
-* `app/build.gradle` - project gradle config file
-* `app/src` - main project source directory
-* `app/src/main` - main project flavour
-* `app/src/main/AndroidManifest.xml` - manifest file
-* `app/src/main/java` - java source directory
-* `app/src/main/res` - resources directory
+* `data` - app data layer
+* `data/src` - datastore source directory
+* `domain` - app domain layer
+* `domain/src` - business logic source directory
+* `presentation` - app presentation layer
+* `presentation/build.gradle` - project gradle config file
+* `presentation/src` - main project source directory
+* `presentation/src/main` - main project flavour
+* `presentation/src/main/AndroidManifest.xml` - manifest file
+* `presentation/src/main/java` - java source directory
+* `presentation/src/main/res` - resources directory
 
 ## Building
 
@@ -64,6 +68,7 @@ This analyses the code and produces reports containing warnings about your
 application in `build/outputs/lint/`.
 
 	gradle lint
+	gradle klint
 
 ## Further reading
 
